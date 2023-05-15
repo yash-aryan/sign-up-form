@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,63 @@
   <link rel="stylesheet" href="./styles.css">
   <title>Sign-up Form</title>
 </head>
+
 <body>
   <div class="main-container">
     <div class="left-container">
-      <div>
+      <div class="left-container-banner">
         <img src="./images/odin-lined.png" alt="The Odin Project's Logo">
         <span>ODIN</span>
       </div>
     </div>
     <div class="right-container">
       <div class="right-container-top">
-        <p class="right-container-paragraph">This is not a real online service! You need you need something like this in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started.</p>
+        <p class="right-container-paragraph">This is not a real online service! You need you need something like this in
+          your life to help you realize your deepest dreams. Sign up <span>now</span> to get started.</p>
         <p class="right-container-paragraph">You <span>know</span> you want to.</p>
       </div>
       <form action="#" method="POST">
         <fieldset>
           <legend>Let's do this!</legend>
-          <div class="form-row1">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" placeholder="John" required>
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
-          </div>
-          <div class="form-row2">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@example.com" required>
-            <label for="phone-number">Phone Number</label>
-            <input type="tel" id="phone-number" name="phone-number" required>
-          </div>
-          <div class="form-row3">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" min-length="8" maxlength="24" required>
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" min-length="8" maxlength="24" required>
-          </div>
-          <div class="right-container-bottom">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
+          <div class="form-cols">
+            <div class="form-col-left">
+              <div class="form-input">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+              </div>
+              <div class="form-input">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+              </div>
+              <div class="form-input">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" min-length="8" maxlength="24" required>
+              </div>
+            </div>
+            <div class="form-col-right">
+              <div class="form-input">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+              </div>
+              <div class="form-input">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+              </div>
+              <div class="form-input">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" min-length="8" maxlength="24"
+                  required>
+              </div>
+            </div>
           </div>
         </fieldset>
+        <div class="right-container-bottom">
+          <button type="submit">Create Account</button>
+          <span>Already have an account? <a href="#">Log in</a></span>
+        </div>
       </form>
     </div>
   </div>
 </body>
+
 </html>
